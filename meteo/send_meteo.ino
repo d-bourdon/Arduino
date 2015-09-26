@@ -1,5 +1,5 @@
 /* --------------------------- */
-/* Script d'envoie des donnÈes */
+/* Script d'envoie des donn√©es */
 /* --------------------------- */
 #include <VirtualWire.h>
 #include "DHT.h"
@@ -35,7 +35,7 @@ void loop()
    total_int = ((tmp1)*10000);
    Serial.println(total_int);  //20608-> Euh nop :p 24400000
    total_int = (total_int + hum1);
-   Serial.println(total_int); //24708-> OK il fait l'adition dÈj‡: 24404100
+   Serial.println(total_int); //24708-> OK il fait l'adition d√©j√†: 24404100
    report[0] = total_int;
  
    vw_send((uint8_t *)report, sizeof(report));
